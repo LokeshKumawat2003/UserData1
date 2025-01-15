@@ -17,4 +17,4 @@ You can try out the live demo of the app here: [Live Demo](https://incandescent-
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/react-user-detail-app.git
+   git clone https://github.com/LokeshKumawat2003/UserData1.git
