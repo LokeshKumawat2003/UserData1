@@ -1,0 +1,101 @@
+
+.container {
+  padding: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e8f4f8;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-left: 6px solid #3498db;
+}
+
+.detail {
+  font-size: 18px;
+  margin: 12px 0;
+  color: #34495e;
+}
+
+.detail strong {
+  color: #3498db;
+}
+
+.addressContainer {
+  margin-top: 30px;
+  border-top: 2px dashed #3498db;
+  padding-top: 20px;
+}
+
+.addressList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.addressItem {
+  font-size: 16px;
+  margin: 6px 0;
+  color: #7f8c8d;
+}
+
+.geoContainer {
+  margin-top: 30px;
+  border-top: 2px dashed #3498db;
+  padding-top: 20px;
+}
+
+.geoList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.geoItem {
+  font-size: 16px;
+  margin: 6px 0;
+  color: #7f8c8d;
+}
+
+.card ul li {
+  padding-left: 15px;
+  position: relative;
+}
+
+.card ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  color: #3498db;
+  top: 0;
+}
+
+.backButton {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.backButton:hover {
+  background-color: #2980b9;
+}

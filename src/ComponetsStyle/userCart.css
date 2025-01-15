@@ -1,0 +1,131 @@
+.cart-box {
+  padding: 5px 8px;
+  border-radius: 8px;
+  line-height: 30px;
+  box-shadow: 0px 0px 7px 0px rgb(209, 209, 209);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.cart-box:hover {
+  box-shadow: -3px 6px 13px 3px rgb(209, 209, 209);
+  transform: translateY(-5px);
+}
+
+.cart-box p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.cart-box p span {
+  color: rgb(91, 89, 89);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cart-boxs {
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.select-container {
+  margin: 10px 0;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+select {
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: #007bff;
+}
+
+option {
+  padding: 5px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 1200px) {
+  .cart-boxs {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cart-boxs {
+    grid-template-columns: 1fr; 
+    margin-top: 30px;
+  }
+
+  .select-container {
+    margin-top: 130px;
+  }
+
+  select {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .cart-box p {
+    font-size: 1rem;
+  }
+
+  .cart-box p span {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cart-box {
+    padding: 5px 10px;
+  }
+
+  .cart-box p {
+    font-size: 0.9rem;
+  }
+
+  .cart-box p span {
+    font-size: 0.8rem;
+  }
+}
